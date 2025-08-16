@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung India | Mobile | TV | Home Appliances</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <h1><img src="image copy 3.png" alt="Samsung Logo" width="150" height="40"></h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex lg:items-center lg:space-x-8">
+                    <a href="https://www.samsung.com/in/offer/" class="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Shop</a>
+                    <a href="https://www.samsung.com/in/mobile/" class="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Mobile</a>
+                    <a href="https://www.samsung.com/in/tvs/all-tvs/" class="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">TV & AV</a>
+                    <a href="https://www.samsung.com/in/home-appliances/" class="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Home Appliances</a>
+                    <a href="https://www.samsung.com/in/computers/all-computers/" class="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Computing & Displays</a>
+                    <a href="https://www.samsung.com/in/accessories/" class="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors">Accessories</a>
+                </div>
+                <!-- Header Icons -->
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-600 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="text-gray-600 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </button>
+                    <button class="text-gray-600 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="lg:hidden text-gray-600 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+             <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4">
+                <a href="https://www.samsung.com/in/offer/" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 rounded">Shop</a>
+                <a href="https://www.samsung.com/in/smartphones/" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 rounded">Mobile</a>
+                <a href="https://www.samsung.com/in/tvs/" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 rounded">TV & AV</a>
+                <a href="https://www.samsung.com/in/home-appliances/" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 rounded">Home Appliances</a>
+                <a href="https://www.samsung.com/in/computing/it/" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 rounded">IT</a>
+                <a href="https://www.samsung.com/in/displays/" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 rounded">Displays</a>
+                <a href="https://www.samsung.com/in/support/" class="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100 rounded">Support</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[85vh] min-h-[550px] bg-cover bg-center text-white" style="background-image: url('image.png');">
+            <div class="absolute inset-0 hero-gradient"></div>
+            <div class="relative container mx-auto px-4 h-full flex flex-col justify-end pb-20 text-center lg:text-left">
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Galaxy Z Fold7</h2>
+                <p class="max-w-xl md:text-lg mb-8 mx-auto lg:mx-0">Thinnest, lightest Fold ever</p>
+                <div class="flex items-center justify-center lg:justify-start space-x-4">
+                    <a href="https://www.samsung.com/in/smartphones/galaxy-z-fold7/buy/" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">Buy now</a>
+                    <a href="https://www.samsung.com/in/smartphones/galaxy-z-fold7/" class="bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Highlights Section -->
+        <section class="py-16 lg:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="flex space-x-6 pb-4 overflow-x-auto horizontal-scroll"></div>
+                <h3 class="text-3xl font-bold text-center mb-12">Check out our latest innovations</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all">
+                        <img src="image copy.png" alt="Galaxy S25 Ultra" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2">Galaxy S25 Ultra</h4>
+                            <p class="text-gray-600 mb-4">Galaxy AI is here</p>
+                            <a href="https://www.samsung.com/in/smartphones/galaxy-s25-ultra/" class="font-semibold text-blue-600 hover:underline">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all">
+                        <img src="image copy 2.png" alt="Neo QLED 8K TV" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2">Neo QLED 8K</h4>
+                            <p class="text-gray-600 mb-4">The pinnacle of picture quality and design</p>
+                            <a href="https://www.samsung.com/in/tvs/qled-tv/qn950f-85-inch-neo-qled-8k-mini-led-smart-tv-qa85qn950fuxxl/" class="font-semibold text-blue-600 hover:underline">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all">
+                        <img src="watch.png" alt="Galaxy S25 Ultra" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2">Galaxy Watch Ultra</h4>
+                            <p class="text-gray-600 mb-4">Welcome to the new era of AI-powered health</p>
+                            <a href="https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch-ultra-2025-47mm-titanium-gray-lte-sm-l705fza1ins/" class="font-semibold text-blue-600 hover:underline">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all">
+                        <img src="image copy 4.png" alt="Bespoke AI Washer" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2">Bespoke AI Washer</h4>
+                            <p class="text-gray-600 mb-4">Intelligent washing, beautiful desig.</p>
+                            <a href="https://www.samsung.com/us/home-appliances/bespoke/laundry/" class="font-semibold text-blue-600 hover:underline">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all">
+                        <img src="fridge.png" alt="Galaxy S25 Ultra" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2">Bespoke AI Refrigerator</h4>
+                            <p class="text-gray-600 mb-4">It's more than a fridge</p>
+                            <a href="https://www.samsung.com/in/smartphones/galaxy-s25-ultra/" class="font-semibold text-blue-600 hover:underline">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all">
+                        <img src="laptop2.png" alt="Neo QLED 8K TV" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold mb-2">Galaxy Book 5 Pro 360</h4>
+                            <p class="text-gray-600 mb-4">Our most capable Galaxy AI PC yet</p>
+                            <a href="https://www.samsung.com/in/computers/galaxy-book/galaxy-book5-pro/buy/?modelCode=NP960QHA-KG4IN" class="font-semibold text-blue-600 hover:underline">Learn more &rarr;</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- This Week's Highlights -->
+        <section class="py-16 lg:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold mb-8">This Week's Highlights</h3>
+                <div class="flex space-x-6 pb-4 overflow-x-auto horizontal-scroll">
+                    <!-- Highlight Card -->
+                    <a href="https://www.samsung.com/in/offer/student-discount/?srsltid=AfmBOooUeyEX5wTYDzrH8QKh-GGSbYXj-LbwJi7rCYXkP4I4O3kfEk66" class="flex-shrink-0 w-80 relative rounded-lg overflow-hidden shadow-xl group">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-all" alt="Student Offers">
+                        <div class="absolute inset-0 card-gradient flex flex-col justify-end p-6 text-white">
+                            <h4 class="text-2xl font-bold">Student Offers</h4>
+                            <p>Exclusive deals for students.</p>
+                        </div>
+                    </a>
+                    <a href="https://www.samsung.com/global/sustainability/" class="flex-shrink-0 w-80 relative rounded-lg overflow-hidden shadow-xl group">
+                        <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1974&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-all" alt="Eco-Friendly">
+                        <div class="absolute inset-0 card-gradient flex flex-col justify-end p-6 text-white">
+                            <h4 class="text-2xl font-bold">Sustainability</h4>
+                            <p>Our commitment to the planet.</p>
+                        </div>
+                    </a>
+                    <a href="https://www.samsung.com/us/smartthings/" class="flex-shrink-0 w-80 relative rounded-lg overflow-hidden shadow-xl group">
+                        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-all" alt="SmartThings">
+                        <div class="absolute inset-0 card-gradient flex flex-col justify-end p-6 text-white">
+                            <h4 class="text-2xl font-bold">SmartThings</h4>
+                            <p>Live a smarter life.</p>
+                        </div>
+                    </a>
+                    <a href="https://www.samsung.com/in/business/displays/?srsltid=AfmBOoqpSCNqvZZOHQ2fuNq0ywBD3Qi9FGMA7qGprbA7y9Xz4_-OM4YX" class="flex-shrink-0 w-80 relative rounded-lg overflow-hidden shadow-xl group">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-all" alt="Samsung Live">
+                        <div class="absolute inset-0 card-gradient flex flex-col justify-end p-6 text-white">
+                            <h4 class="text-2xl font-bold">Business Displays</h4>
+                            <p>Solutions for your workspace.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-8">
+                <!-- Column 1 -->
+                <div>
+                    <h5 class="font-bold mb-4">Product & Service</h5>
+                    <ul>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/smartphones/all-smartphones/" class="hover:underline text-gray-300">Smartphones</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/tablets/all-tablets/" class="hover:underline text-gray-300">Tablets</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/watches/all-watches/" class="hover:underline text-gray-300">Watches</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/tvs/all-tvs/" class="hover:underline text-gray-300">TVs</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/refrigerators/all-refrigerators/" class="hover:underline text-gray-300">Refrigerators</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/audio-devices/?product1=hw-q990d/xl&product2=hw-s700d/xl&product3=hw-b650d/xl" class="hover:underline text-gray-300">Sound Devices</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/monitors/" class="hover:underline text-gray-300">Monitors</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/air-conditioners/" class="hover:underline text-gray-300">Air Solutions</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/cooking-appliances/" class="hover:underline text-gray-300">Cooking Appliancess</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/memory-storage/" class="hover:underline text-gray-300">Memory Storage</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div>
+                    <h5 class="font-bold mb-4">Support</h5>
+                    <ul>
+                        <li class="mb-2"><a href="https://api.whatsapp.com/send/?phone=91180057267864&text&type=phone_number&app_absent=0" class="hover:underline text-gray-300">Whatsapp Us</a></li>
+                        <li class="mb-2"><a href="https://api.whatsapp.com/send/?phone=91180057267864&text&type=phone_number&app_absent=0" class="hover:underline text-gray-300">Sign Language</a></li>
+                        <li class="mb-2"><a href="https://samsungdigitalservicecenter.com/?action=email" class="hover:underline text-gray-300">Email Us</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/support/contact/" class="hover:underline text-gray-300">Call Us</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/support/service-center/" class="hover:underline text-gray-300">Service Center</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/mypage/myrepair/track-repair/" class="hover:underline text-gray-300">Track Repair</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/support/warranty/" class="hover:underline text-gray-300">Warranty</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <h5 class="font-bold mb-4">Account</h5>
+                    <ul>
+                        <li class="mb-2"><a href="https://account.samsung.com/iam/oauth2/authorize?client_id=28xws2p2v3&redirect_uri=https%3A%2F%2Fwww.samsung.com%2Faemapi%2Fv6%2Fdata-login%2FafterLogin.in.json&response_type=code&scope=&state=GLBovz8inn&locale=en-IN" class="hover:underline text-gray-300">My Page</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/web/search-orders/" class="hover:underline text-gray-300">My Orders</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/web/search-orders/#login-page" class="hover:underline text-gray-300">Login</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/web/mypage/wishlist/#login-page" class="hover:underline text-gray-300">Wishlist</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/web/mypage/vouchers/#login-page" class="hover:underline text-gray-300">Vouchers</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/web/my-referrals/#login-page" class="hover:underline text-gray-300">My Referrals</a></li>
+                        <li class="mb-2"><a href="https://account.samsung.com/iam/oauth2/authorize?client_id=28xws2p2v3&redirect_uri=https%3A%2F%2Fwww.samsung.com%2Faemapi%2Fv6%2Fdata-login%2FafterLogin.in.json&response_type=code&scope=&state=GLB2ymji1p&locale=en-IN" class="hover:underline text-gray-300">Service</a></li>
+                        <li class="mb-2"><a href="https://r2.community.samsung.com/t5/India/ct-p/in?profile.language=en&page=1&tab=recent_topics" class="hover:underline text-gray-300">Community</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                 <div>
+                    <h5 class="font-bold mb-4">About Us</h5>
+                    <ul>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/about-us/company-info/" class="hover:underline text-gray-300">Company Info</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/about-us/business-area/" class="hover:underline text-gray-300">Business Area</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/about-us/brand-identity/" class="hover:underline text-gray-300">Brand Identity</a></li>
+                        <li class="mb-2"><a href="https://www.samsung.com/in/about-us/careers/" class="hover:underline text-gray-300">Careers</a></li>
+                        <li class="mb-2"><a href="https://news.samsung.com/in/" class="hover:underline text-gray-300">Newsroom</a></li>
+                        <li class="mb-2"><a href="https://design.samsung.com/global/index.html" class="hover:underline text-gray-300">Samsung Design</a></li>
+                    </ul>
+                </div>
+                 <!-- Column 5 & 6 are often combined or used for more links -->
+            </div>
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">Copyright © 1995-2025 Samsung. All Rights Reserved. (Samsung India)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
